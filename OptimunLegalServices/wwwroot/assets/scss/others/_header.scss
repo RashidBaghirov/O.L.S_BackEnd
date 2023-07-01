@@ -1,0 +1,118 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    padding: 5px;
+    .logos {
+      width: 350px;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    nav {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      max-width: calc(100% - 120px);
+  
+      ul {
+        display: flex;
+        list-style: none;
+  
+        li {
+          margin-right: 20px;
+  
+          a {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: .5px;
+            text-decoration: none;
+            transition: color .3s ease, opacity .3s ease;
+            color: white;
+  
+            &:hover {
+              color: gray;
+            }
+          }
+        }
+      }
+  
+      @media screen and (max-width: 391px) {
+        & {
+          max-width: 100%;
+        }
+      }
+    }
+  
+    @media screen and (max-width: 391px) {
+      & {
+        margin: 0;
+        background-color: black;
+        position: relative;
+      }
+  
+      .logos {
+        width: 100%;
+      }
+  
+      nav {
+        max-width: 100%;
+        justify-content: center;
+  
+        ul {
+          flex-wrap: wrap;
+        }
+  
+        li {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    @media screen and (max-width: 1001px) {
+        & {
+          margin: 0;
+          background-color: black;
+          position: relative;
+        }
+    
+        .logos {
+          width: 300px;
+        }
+    
+        nav {
+          max-width: 100%;
+          justify-content: center;
+    
+          ul {
+            flex-wrap: wrap;
+          }
+    
+          li {
+            margin-right: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
+  }
+  
+  .active {
+    background-color: black;
+    position: fixed !important;
+    top: 0 !important;
+    box-shadow: 1px 1px 5px 1px rgb(255, 255, 255) !important;
+    z-index: 22 !important;
+    padding: 5px;
+  }
+  
+
+  .other{
+    background-color: black;
+  }

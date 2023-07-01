@@ -1,0 +1,206 @@
+#video {
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    .videos {
+      video {
+        height: 100%;
+        left: 0;
+        object-fit: cover;
+        object-position: 50% 50%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+  
+    .wrapper {
+      margin: 0 auto;
+      max-width: 1920px;
+      padding: 0 100px;
+      z-index: 1;
+  
+      .hero_anchor {
+        bottom: 110px;
+        color: #fff;
+        left: 140px;
+        position: absolute;
+        text-decoration: none;
+        width: 41.6667%;
+        font-family: auto;
+        background-color: transparent;
+  
+        h2 {
+          font-size: 5.2rem;
+          overflow: hidden;
+          background-color: transparent;
+        }
+  
+        a {
+          background-color: transparent;
+          border-color: #d8d8d8;
+          color: #fff;
+          background-color: transparent;
+          border: 1px solid #999;
+          border-radius: 0;
+          cursor: pointer;
+          display: inline-block;
+          font-family: MonumentGrotesk-Regular, helvetica, arial, sans-serif;
+          font-size: 1.6rem;
+          font-weight: 400;
+          letter-spacing: .5px;
+          line-height: 1;
+          min-width: 246px;
+          padding: 1em 2em;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.3s all;
+  
+          &:hover {
+            border-color: gray;
+            color: gray;
+          }
+        }
+      }
+  
+      @media screen and (max-width: 391px) {
+        .hero_anchor {
+          display: none;
+        }
+      }
+    }
+  
+    @media screen and (max-width: 1011px) {
+      .videos {
+        video {
+          height: 100%;
+          left: 0;
+          object-fit: cover;
+          object-position: 50% 50%;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+      }
+  
+      .wrapper {
+        margin: 0 auto;
+        max-width: 1920px;
+        padding: 0 100px;
+        z-index: 1;
+  
+        .hero_anchor {
+          h2 {
+            font-size: 2.2rem;
+            overflow: hidden;
+            background-color: transparent;
+          }
+  
+          a {
+            background-color: transparent;
+            border-color: #d8d8d8;
+            color: #fff;
+            background-color: transparent;
+            border: 1px solid #999;
+            border-radius: 0;
+            cursor: pointer;
+            display: inline-block;
+            font-family: MonumentGrotesk-Regular, helvetica, arial, sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: .5px;
+            line-height: 1;
+            min-width: 246px;
+            padding: 1em 2em;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s all;
+  
+            &:hover {
+              border-color: gray;
+              color: gray;
+            }
+          }
+        }
+  
+        @media screen and (max-width: 391px) {
+          .hero_anchor {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    @media screen and (max-width: 1001px) {
+      .videos {
+        video {
+          height: 100%;
+          left: 0;
+          object-fit: cover;
+          object-position: 50% 50%;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+      }
+  
+      .wrapper {
+        margin: 0;
+        background-color: black;
+        position: relative;
+      }
+  
+      .hero_anchor {
+        h2 {
+          font-size: 2.2rem;
+          overflow: hidden;
+          background-color: transparent;
+        }
+  
+        a {
+          background-color: transparent;
+          border-color: #d8d8d8;
+          color: #fff;
+          background-color: transparent;
+          border: 1px solid #999;
+          border-radius: 0;
+          cursor: pointer;
+          display: inline-block;
+          font-family: MonumentGrotesk-Regular, helvetica, arial, sans-serif;
+          font-size: 1.6rem;
+          font-weight: 400;
+          letter-spacing: .5px;
+          line-height: 1;
+          min-width: 246px;
+          padding: 1em 2em;
+          text-align: center;
+          text-decoration: none;
+          transition: 0.3s all;
+  
+          &:hover {
+            border-color: gray;
+            color: gray;
+          }
+        }
+      }
+  
+      .logos {
+        width: 300px;
+      }
+  
+      nav {
+        max-width: 100%;
+        justify-content: center;
+  
+        ul {
+          flex-wrap: wrap;
+        }
+  
+        li {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  
