@@ -9,105 +9,165 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OptimunLegalServices
 build_property.RootNamespace = OptimunLegalServices
-build_property.ProjectDir = C:\Users\resid\OneDrive\Desktop\CodeAcademy\CodeBack\OptimunLegalServices\
+build_property.ProjectDir = C:\Users\resid\OneDrive\Desktop\O.L.S.Back\OptimunLegalServices\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\resid\OneDrive\Desktop\CodeAcademy\CodeBack\OptimunLegalServices
+build_property.MSBuildProjectDirectory = C:\Users\resid\OneDrive\Desktop\O.L.S.Back\OptimunLegalServices
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Contact/Index.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/AdminLogin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEFkbWluTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/AdminRegister/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEFkbWluUmVnaXN0ZXJcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Blogs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEJsb2dzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Blogs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEJsb2dzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Blogs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEJsb2dzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Blogs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEJsb2dzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Blogs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEJsb2dzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXENvbnRhY3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Contact/Replace.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Contact/Replace.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXENvbnRhY3RcUmVwbGFjZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Products/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByb2R1Y3RzXENyZWF0ZS5jc2h0bWw=
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Expertices/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEV4cGVydGljZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Products/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByb2R1Y3RzXERlbGV0ZS5jc2h0bWw=
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Expertices/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEV4cGVydGljZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Products/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByb2R1Y3RzXERldGFpbHMuY3NodG1s
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Expertices/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEV4cGVydGljZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Products/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByb2R1Y3RzXEVkaXQuY3NodG1s
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Expertices/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEV4cGVydGljZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Products/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByb2R1Y3RzXEluZGV4LmNzaHRtbA==
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Expertices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEV4cGVydGljZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Create.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/PracticeArea/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByYWN0aWNlQXJlYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/PracticeArea/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByYWN0aWNlQXJlYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/PracticeArea/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByYWN0aWNlQXJlYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/PracticeArea/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByYWN0aWNlQXJlYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/PracticeArea/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFByYWN0aWNlQXJlYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Security/Security.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFNlY3VyaXR5XFNlY3VyaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFNldHRpbmdcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Delete.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFNldHRpbmdcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Details.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFNldHRpbmdcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Edit.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFNldHRpbmdcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Index.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Setting/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFNldHRpbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/Shared/_Layout.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/_ViewImports.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/Subscribe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXFN1YnNjcmliZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Areas/OptimunAdmin/Views/_ViewStart.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Areas/OptimunAdmin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT3B0aW11bkFkbWluXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/Contact/Index.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/Expertice/Index.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/Expertice/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwZXJ0aWNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/Home/Index.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/News/Detail.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/News/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/News/Index.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/News/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/_ViewImports.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/_ViewStart.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/resid/OneDrive/Desktop/CodeAcademy/CodeBack/OptimunLegalServices/Views/Shared/_Layout.cshtml]
+[C:/Users/resid/OneDrive/Desktop/O.L.S.Back/OptimunLegalServices/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-n4oqz9tqyt

@@ -1,6 +1,9 @@
-﻿@inject OptimunLegalServices.Services.LayoutService layoutService
+﻿@using OptimunLegalServices.Utilities.Enum;
+@inject OptimunLegalServices.Services.LayoutService layoutService
 @{
     List<ContactUs> contacts = layoutService.GetContactUs();
+    User user = await layoutService.GetUserFullName();
+
 }
 @if (TempData["Contact"] != null)
 {
@@ -85,7 +88,7 @@
    <div class="wrapper">
       <!-- Navbar-->
       <header class="main-header-top hidden-print">
-         <a href="index.html" class="logo"><img class="img-fluid able-logo" src="~/admin/assets/images/logo.png" alt="Theme-logo"></a>
+            <a asp-area="OptimunAdmin" asp-controller="home" asp-action="index" class="logo"><img class="img-fluid able-logo" src="~/admin/assets/images/logo.png" alt="Theme-logo"></a>
          <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button-->
             <a href="#!" data-toggle="offcanvas" class="sidebar-toggle"></a>
@@ -100,29 +103,30 @@
                      </a>
 
                   </li>
-                  <!-- window screen -->
                   <li class="pc-rheader-submenu">
                      <a href="#!" class="drop icon-circle" onclick="javascript:toggleFullScreen()">
                         <i class="icon-size-fullscreen"></i>
                      </a>
 
                   </li>
-                  <!-- User Menu-->
                   <li class="dropdown">
                      <a href="#!" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle drop icon-circle drop-image">
                                 <span><img class="img-circle " src="https://www.totallylegal.com/getasset/c3ee2a89-b973-445f-9337-1ca05736c950/" style="width:40px;" alt="User Image"></span>
-                                @*<span>   @await layoutService.GetUserFullName()<i class=" icofont icofont-simple-down"></i></span>*@
+                                <span>   @user.FullName<i class=" icofont icofont-simple-down"></i></span>
 
                      </a>
                      <ul class="dropdown-menu settings-menu">
-                                <li><a asp-area =" " asp-controller="Account" asp-action="Index"><i class="icon-settings"></i> Settings</a></li>
+                                 @if (User.IsInRole(AdminRoles.superadmin.ToString()))
+                                            {
+                                    <li><a asp-area="OptimunAdmin" asp-controller="AdminRegister" asp-action="Register"><i class="icon-settings"></i> Register</a></li>
+                                            }
+                                <li><a asp-area="OptimunAdmin" asp-controller="Security" asp-action="Security"><i class="icon-settings"></i> Security</a></li>
                         <li><a asp-controller="contact" asp-action="index"><i class="icon-envelope-open"></i> My Messages</a></li>
                         <li><a asp-area=" " asp-controller="Home" asp-action="Index"><i class="icon-home"></i>Go Site</a></li>
                         <li class="p-0">
                            <div class="dropdown-divider m-0"></div>
                         </li>
-                                <li><a asp-area="Adminareas" asp-controller="account" asp-action="LogOut"><i class="icon-logout"></i> Logout</a></li>
-
+                                <li><a asp-area="OptimunAdmin" asp-controller="AdminLogin" asp-action="LogOut"><i class="icon-logout"></i> Logout</a></li>
                      </ul>
                   </li>
                </ul>
@@ -137,15 +141,20 @@
             <ul class="sidebar-menu">
                 <li class="nav-level">--- Navigation</li>
                 <li class="active treeview">
-                        <a class="waves-effect waves-dark" asp-area="Adminareas" asp-controller="Home" asp-action="Statistics">
+                        <a class="waves-effect waves-dark" asp-area="OptimunAdmin" asp-controller="Home" asp-action="Statistics">
                         <i class="icon-speedometer"></i><span> Dashboard</span>
                     </a>                
                 </li>
                 <li class="nav-level">--- Components</li>
                 <li class="treeview"><a class="waves-effect waves-dark" href="#!"><i class="icon-briefcase"></i><span>Entities</span><i class="icon-arrow-down"></i></a>
                     <ul class="treeview-menu">
-                            <li><a class="waves-effect waves-dark" asp-area="Adminareas" asp-controller="Setting" asp-action="Index"><i class="icon-arrow-right"></i> Settings</a></li>
-                            <li><a class="waves-effect waves-dark" asp-area="Adminareas" asp-controller="Products" asp-action="Index"><i class="icon-arrow-right"></i>Blogs</a></li>
+                            <li><a class="waves-effect waves-dark" asp-area="OptimunAdmin" asp-controller="Setting" asp-action="index"><i class="icon-arrow-right"></i> Settings</a></li>
+                            <li><a class="waves-effect waves-dark" asp-area="OptimunAdmin" asp-controller="Subscribe" asp-action="Index"><i class="icon-arrow-right"></i> Subscribes</a></li>
+                            <li><a class="waves-effect waves-dark" asp-area="OptimunAdmin" asp-controller="Blogs" asp-action="Index"><i class="icon-arrow-right"></i>Blogs</a></li>
+                            <li><a class="waves-effect waves-dark" asp-area="OptimunAdmin" asp-controller="Expertices" asp-action="Index"><i class="icon-arrow-right"></i>Expertices</a></li>
+                            <li><a class="waves-effect waves-dark" asp-area="OptimunAdmin" asp-controller="PracticeArea" asp-action="Index"><i class="icon-arrow-right"></i>PracticeAreas</a></li>
+
+
                     </ul>
                 </li>
             </ul>

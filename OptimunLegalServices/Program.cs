@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using OptimunLegalServices.DAL;
+using OptimunLegalServices.Entities;
 using OptimunLegalServices.Services;
 
 namespace OptimunLegalServices
@@ -15,6 +17,24 @@ namespace OptimunLegalServices
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
+
+
+
+            builder.Services.AddIdentity<User, IdentityRole>(opt =>
+            {
+                opt.SignIn.RequireConfirmedEmail = false;
+                opt.Password.RequiredUniqueChars = 1;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequiredLength = 5;
+                opt.Password.RequireDigit = true;
+                opt.Password.RequireLowercase = true;
+                opt.Password.RequireUppercase = false;
+                opt.User.RequireUniqueEmail = false;
+                opt.User.AllowedUserNameCharacters = "qwertyuiopasdfghjklzxcvbnm_-1234567890.QWERTYUIOPASDFGHJKLZXCVBNM:)( ";
+                opt.Lockout.MaxFailedAccessAttempts = 5;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
+            }).AddDefaultTokenProviders().AddEntityFrameworkStores<OptimunDbContext>();
+
             var app = builder.Build();
 
             if (!app.Environment.IsDevelopment())
@@ -23,11 +43,13 @@ namespace OptimunLegalServices
                 app.UseHsts();
             }
 
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

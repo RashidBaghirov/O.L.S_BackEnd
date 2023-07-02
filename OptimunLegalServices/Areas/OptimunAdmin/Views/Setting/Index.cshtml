@@ -1,10 +1,10 @@
-﻿@*@model IEnumerable<Papa_Jhons.Entities.Setting>
+﻿@model IEnumerable<Setting>
 <div class="row">
     <div class="main-header" style="margin-top: 0px;">
         <h4>Setting</h4>
         <ol class="breadcrumb breadcrumb-title breadcrumb-arrow">
             <li class="breadcrumb-item">
-                <a asp-area="AdminAreas" asp-controller="Home" asp-action="Statistics">
+                <a asp-area="OptimunAdmin" asp-controller="Home" asp-action="index">
                     <i class="icofont icofont-home"></i>
                 </a>
             </li>
@@ -12,7 +12,7 @@
                 <a href="#!">Entities</a>
             </li>
             <li class="breadcrumb-item">
-                <a asp-area="AdminAreas" asp-controller="Setting" asp-action="Index">Settings</a>
+                <a asp-area="Optimunadmin" asp-controller="Setting" asp-action="Index">Settings</a>
             </li>
         </ol>
     </div>
@@ -86,4 +86,4 @@
             <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage+1)">Next</a>
         </li>
     </ul>
-</nav>*@
+</nav>

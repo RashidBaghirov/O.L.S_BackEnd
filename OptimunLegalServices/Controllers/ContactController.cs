@@ -10,7 +10,7 @@ namespace OptimunLegalServices.Controllers
 
         public ContactController(OptimunDbContext context)
         {
-           _context = context;
+            _context = context;
         }
         public IActionResult Index()
         {
@@ -18,21 +18,23 @@ namespace OptimunLegalServices.Controllers
             return View();
         }
 
+
+
         [HttpPost]
-        public IActionResult Index(string name, string surname, string email, string phoneNumber, string comment,int practiceId)
+        public IActionResult Index(string name, string surname, string email, string phoneNumber, string comment, int practiceId)
         {
             TempData["Contact"] = false;
 
             ContactUs contactUs = new()
             {
                 FirstName = name,
-                LastName=surname,
+                LastName = surname,
                 Email = email,
                 PhoneNumber = phoneNumber,
                 Comment = comment,
-                PracticeAreaId=practiceId,
+                PracticeAreaId = practiceId,
                 SendTime = DateTime.Now,
-                
+
                 IsReply = false
             };
 

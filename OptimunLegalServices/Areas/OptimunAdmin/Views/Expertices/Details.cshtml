@@ -1,0 +1,30 @@
+﻿@model Expertice
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+           IMage
+        </dt>
+        <dd class="col-sm-10">
+            <img src="~/assets/images/Expertice/@Model.Image" />
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Titles_expertice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Titles_expertice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Infos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Infos)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

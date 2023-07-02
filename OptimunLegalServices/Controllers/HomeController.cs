@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OptimunLegalServices.DAL;
 using OptimunLegalServices.Entities;
@@ -8,10 +9,9 @@ namespace OptimunLegalServices.Controllers
     public class HomeController : Controller
     {
         private readonly OptimunDbContext _context;
-
         public HomeController(OptimunDbContext context)
         {
-           _context = context;
+            _context = context;
         }
         public IActionResult Index()
         {
@@ -21,7 +21,7 @@ namespace OptimunLegalServices.Controllers
         public ActionResult Subscribe(string email)
         {
             TempData["Subscribe"] = false;
-            if(email is null) return Redirect(Request.Headers["Referer"].ToString());
+            if (email is null) return Redirect(Request.Headers["Referer"].ToString());
             bool Isdublicate = _context.Subscribes.Any(c => c.Email == email);
 
             if (Isdublicate)
@@ -37,6 +37,7 @@ namespace OptimunLegalServices.Controllers
             TempData["Subscribe"] = true;
             return Redirect(Request.Headers["Referer"].ToString());
         }
+
 
     }
 }

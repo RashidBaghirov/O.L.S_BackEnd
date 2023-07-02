@@ -4,9 +4,13 @@ using System.Net;
 using OptimunLegalServices.DAL;
 using OptimunLegalServices.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace OptimunLegalServices.Areas.OptimunAdmin.Controllers
 {
+    [Authorize(Roles = "superadmin,admin")]
+
     [Area("OptimunAdmin")]
     public class ContactController : Controller
     {
@@ -18,8 +22,21 @@ namespace OptimunLegalServices.Areas.OptimunAdmin.Controllers
         }
         public IActionResult Index()
         {
-            List<ContactUs> messages = _context.ContactUs.Include(x=>x.PracticeArea).ToList();
+            List<ContactUs> messages = _context.ContactUs.Include(x => x.PracticeArea).ToList();
             return View(messages);
+        }
+
+        [HttpPost]
+        public IActionResult Index(string search, int page = 1)
+        {
+            ViewBag.TotalPage = Math.Ceiling((double)_context.ContactUs.Count() / 8);
+            ViewBag.CurrentPage = page;
+            List<ContactUs> contactUs = _context.ContactUs.Skip((page - 1) * 8).Take(8).ToList();
+            if (!string.IsNullOrEmpty(search))
+            {
+                contactUs = contactUs.Where(x => x.Email.ToLower().StartsWith(search.ToLower().Substring(0, Math.Min(search.Length, 2)))).ToList();
+            }
+            return View(contactUs);
         }
 
         public IActionResult Replace(int id)
@@ -61,7 +78,7 @@ namespace OptimunLegalServices.Areas.OptimunAdmin.Controllers
         public IActionResult Delete(int id)
         {
             TempData["Delete"] = false;
-            if (id == 0)  return NotFound();
+            if (id == 0) return NotFound();
             ContactUs contact = _context.ContactUs.Include(x => x.PracticeArea).FirstOrDefault(x => x.Id == id);
             if (contact is null) return NotFound();
             _context.ContactUs.Remove(contact);
