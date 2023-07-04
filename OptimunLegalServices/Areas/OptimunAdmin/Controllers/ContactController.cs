@@ -77,13 +77,11 @@ namespace OptimunLegalServices.Areas.OptimunAdmin.Controllers
 
         public IActionResult Delete(int id)
         {
-            TempData["Delete"] = false;
             if (id == 0) return NotFound();
             ContactUs contact = _context.ContactUs.Include(x => x.PracticeArea).FirstOrDefault(x => x.Id == id);
             if (contact is null) return NotFound();
             _context.ContactUs.Remove(contact);
             _context.SaveChanges();
-            TempData["Delete"] = true;
             return RedirectToAction(nameof(Index));
         }
     }

@@ -17,9 +17,9 @@
         </ol>
     </div>
 </div>
-<p>
+@*<p>
     <a asp-action="Create">Create New</a>
-</p>
+</p>*@
 <form method="post" asp-controller="Setting" asp-action="Index">
     <div class="input-group mb-3">
         <input type="text" class="form-control" name="search" id="searchInput" placeholder="Searching 'Key'">
@@ -63,8 +63,8 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> 
+                @*<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
             </td>
         </tr>
 }

@@ -117,17 +117,32 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                    @Html.DisplayFor(modelItem => item.Desc1)
+                    @item.Desc1.Substring(0,20) ....
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Desc2)
+                    @if(item.Desc2 is not null)
+                    {
+                        @item.Desc2.Substring(0,20)    
+                     
+                    }
+                    ....
             </td>
             <td>
-                    @Html.DisplayFor(modelItem => item.Desc3)
+                    @if (item.Desc3 is not null)
+                    {
+                        @item.Desc3.Substring(0,20)
+
+                    }
+                    ....
 
             </td>
             <td>
-                    @Html.DisplayFor(modelItem => item.Desc4)
+                    @if (item.Desc4 is not null)
+                    {
+                        @item.Desc4.Substring(0,20)
+
+                    }
+                    ....
 
             </td>
             <td>

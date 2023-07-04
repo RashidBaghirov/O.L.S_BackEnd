@@ -102,10 +102,11 @@
                     </div>
                 </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Titles_expertice)
+                    @item.Titles_expertice.Substring(0,20) ....
+
             </td>
             <td>
-                    @Html.DisplayFor(modelItem => item.Infos)
+                    @item.Infos.Substring(0,20) ....
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

@@ -86,12 +86,12 @@ namespace OptimunLegalServices.Areas.AdminAreas.Controllers
         {
             if (id <= 0)
             {
-                return Redirect("~/Error/Error");
+                return NotFound();
             }
             Setting setting = _context.Settings.FirstOrDefault(s => s.Id == id);
             if (setting is null)
             {
-                return Redirect("~/Error/Error");
+                return NotFound();
             }
             return View(setting);
         }
@@ -99,11 +99,11 @@ namespace OptimunLegalServices.Areas.AdminAreas.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Setting edited)
         {
-            if (id != edited.Id) return Redirect("~/Error/Error");
+            if (id != edited.Id) return NotFound();
             Setting setting = _context.Settings.FirstOrDefault(s => s.Id == id);
             if (setting is null)
             {
-                return Redirect("~/Error/Error");
+                return NotFound();
             }
             if (!ModelState.IsValid) return View(setting);
             _context.Entry<Setting>(setting).CurrentValues.SetValues(edited);
@@ -123,7 +123,7 @@ namespace OptimunLegalServices.Areas.AdminAreas.Controllers
 
         public IActionResult Details(int id)
         {
-            if (id == 0) return Redirect("~/Error/Error");
+            if (id == 0) return NotFound();
             Setting? setting = _context.Settings.FirstOrDefault(c => c.Id == id);
             return setting is null ? BadRequest() : View(setting);
         }

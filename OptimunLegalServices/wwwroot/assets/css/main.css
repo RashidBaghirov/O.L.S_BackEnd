@@ -737,8 +737,10 @@
   padding: 0;
 }
 
+#blog {
+  padding: 50px;
+}
 #blog .wrapper {
-  padding: 160px 50px 98px;
   display: flex;
 }
 #blog .wrapper .left {

@@ -15,6 +15,8 @@ namespace OptimunLegalServices.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.News = _context.Blogs.Take(3).ToList();
+            ViewBag.Expertice = _context.Expertices.Take(1).ToList();
             return View();
         }
 

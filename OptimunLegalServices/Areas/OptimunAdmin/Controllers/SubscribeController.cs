@@ -42,14 +42,9 @@ namespace OptimunLegalServices.Areas.OptimunAdmin.Controllers
         public IActionResult Delete(int id)
         {
             TempData["Delete"] = false;
-
             if (id == 0) return NotFound();
-
-
             Subscribe? subscribe = _context.Subscribes.FirstOrDefault(x => x.Id == id);
-
             if (subscribe is null) return NotFound();
-
             _context.Subscribes.Remove(subscribe);
             _context.SaveChanges();
             TempData["Delete"] = true;

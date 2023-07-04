@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = "News";
-
+   
 }
+@model List<Blog>
 @if (TempData["Subscribe"] != null)
 {
     if ((bool)TempData["Subscribe"] == true)
@@ -34,180 +35,121 @@
                 </div>
             </div>
             <div class="col-12">
-                <form class="search-field" action="">
-                    <input type="search"
+                <form class="search-field search" onsubmit="event.preventDefault();" action="">
+                    <input type="search" name="search" 
                            class="search-field_input"
                            placeholder="Search for news"
-                           value="" />
+                           />
                 </form>
+                <div class="search-results d-block"></div>
+
             </div>
             <div class="col-12">
                 <div class="title">
                     <h3>News</h3>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a asp-controller="news" asp-action="detail"
-                       title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/istock-1395275669-800x532.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
+            @foreach (Blog blog in Model)
+            {
+                <div class="col-lg-4">
+                    <div class="new">
+                        <a asp-controller="news" asp-action="detail" asp-route-id="@blog.Id"
+                           title="@blog.Title">
+                            <img style="width: 400px; object-fit: contain"
+                                 src="~/assets/images/Blogs/@blog.Image"
+                                 class="responsive-img postentry_thumbnail wp-post-image" />
+                            <h2 class="postentry_title">
+                                @blog.Title
+                            </h2>
+                        </a>
+                        <time datetime="2023-06-30 12:26:42">@blog.Date.ToString("dd MMMM yyyy")</time>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="" title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/ms-sthlm-corp-12-1170x1425px-800x974.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="" title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/msa-building-square-1200x1200.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="https://www.mannheimerswartling.se/en/publications-and-newsletter/24623/"
-                       title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/istock-1395275669-800x532.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="" title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/ms-sthlm-corp-12-1170x1425px-800x974.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="" title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/msa-building-square-1200x1200.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="https://www.mannheimerswartling.se/en/publications-and-newsletter/24623/"
-                       title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/istock-1395275669-800x532.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="" title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/ms-sthlm-corp-12-1170x1425px-800x974.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="" title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/msa-building-square-1200x1200.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="https://www.mannheimerswartling.se/en/publications-and-newsletter/24623/"
-                       title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/istock-1395275669-800x532.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="" title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/ms-sthlm-corp-12-1170x1425px-800x974.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="new">
-                    <a href="" title="New EU proposals for PSD3 and Open Finance">
-                        <img style="width: 400px; object-fit: contain"
-                             src="https://www.mannheimerswartling.se/app/uploads/2023/06/msa-building-square-1200x1200.jpg"
-                             class="responsive-img postentry_thumbnail wp-post-image" />
-                        <h2 class="postentry_title">
-                            New EU proposals for PSD3 and Open Finance
-                        </h2>
-                    </a>
-                    <time datetime="2023-06-30 12:26:42">30 June 2023</time>
-                </div>
-            </div>
+            }
+      
         </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+                    <a class="page-link" asp-action="MySticker" asp-route-page="@(ViewBag.CurrentPage-1)" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+
+                @if (ViewBag.TotalPage <= 5)
+                {
+                    @for (int i = 1; i <= (int)ViewBag.TotalPage; i++)
+                    {
+                        <li class="page-item @(i == ViewBag.CurrentPage ? "disabled" : "")">
+                            <a class="page-link" asp-action="MySticker" asp-route-page="@i">@i</a>
+                        </li>
+                    }
+                }
+                else
+                {
+                    @if (ViewBag.CurrentPage <= 3)
+                    {
+                        for (int i = 1; i <= 5; i++)
+                        {
+                            <li class="page-item @(i == ViewBag.CurrentPage ? "disabled" : "")">
+                                <a class="page-link" asp-action="index" asp-route-page="@i">@i</a>
+                            </li>
+                        }
+                        <li class="page-item disabled">
+                            <a class="page-link">...</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" asp-action="index" asp-route-page="@ViewBag.TotalPage">@ViewBag.TotalPage</a>
+                        </li>
+                    }
+                    else if (ViewBag.CurrentPage >= (int)ViewBag.TotalPage - 2)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" asp-action="index" asp-route-page="1">1</a>
+                        </li>
+                        <li class="page-item disabled">
+                            <a class="page-link">...</a>
+                        </li>
+                        for (int i = (int)ViewBag.TotalPage - 4; i <= (int)ViewBag.TotalPage; i++)
+                        {
+                            <li class="page-item @(i == ViewBag.CurrentPage ? "disabled" : "")">
+                                <a class="page-link" asp-action="MySticker" asp-route-page="@i">@i</a>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a class="page-link" asp-action="index" asp-route-page="1">1</a>
+                        </li>
+                        <li class="page-item disabled">
+                            <a class="page-link">...</a>
+                        </li>
+                        for (int i = ViewBag.CurrentPage - 2; i <= ViewBag.CurrentPage + 2; i++)
+                        {
+                            <li class="page-item @(i == ViewBag.CurrentPage ? "disabled" : "")">
+                                <a class="page-link" asp-action="index" asp-route-page="@i">@i</a>
+                            </li>
+                        }
+                        <li class="page-item disabled">
+                            <a class="page-link">...</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" asp-action="index" asp-route-page="@ViewBag.TotalPage">@ViewBag.TotalPage</a>
+                        </li>
+                    }
+                }
+
+                <li class="page-item @(ViewBag.CurrentPage == ViewBag.TotalPage ? "disabled" : "")">
+                    <a class="page-link" asp-action="index" asp-route-page="@(ViewBag.CurrentPage+1)" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
     </div>
+
 </section>
 @section Script{
     <script>
@@ -220,5 +162,30 @@
             }
 
         })
+    </script>
+    <script>
+        const searchForm = document.querySelector('.search');
+        const searchInput = searchForm.querySelector('.search-field_input');
+        const searchResults = document.querySelector('.search-results');
+
+        let timeoutId;
+
+        searchInput.addEventListener('input', (e) => {
+            const searchQuery = e.target.value.trim();
+            if (searchQuery.length < 2) {
+                searchResults.innerHTML = '';
+                return;
+            }
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                fetch(`/News/Search?search=${searchQuery}`)
+                    .then(response => response.text())
+                    .then(data => {
+                        searchResults.innerHTML = data;
+                    })
+                    .catch(error => console.log(error));
+            }, 200);
+        });
+
     </script>
 }

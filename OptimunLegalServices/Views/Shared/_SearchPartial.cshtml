@@ -1,0 +1,32 @@
+﻿@using OptimunLegalServices.Entities;
+
+@model List<Blog>
+
+<ul class="search_ul" style="list-style:none;margin:0px;padding:0px;">
+    @foreach (Blog item in Model)
+    {
+        <li>
+            <div class="news_block">
+                <a asp-controller="news" asp-action="detail" asp-route-id="@item.Id" class=" text-dark">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex">
+                            <div class="image m-3" style="width:200px;">
+                                <img style="width:100%;object-fit:contain;" alt="@item.Title" src="~/assets/images/Blogs/@item.Image" />
+                            </div>
+                            <div class="title">
+                                <p>@item.Title</p>
+                                <div class="date">
+                                    <p>@item.Date.ToString("dd MMMM yyyy")</p>
+                                </div>
+                            </div>
+                       
+                        </div>
+                       
+                    </div>
+                </a>
+            </div>
+
+        </li>
+
+    }
+</ul>

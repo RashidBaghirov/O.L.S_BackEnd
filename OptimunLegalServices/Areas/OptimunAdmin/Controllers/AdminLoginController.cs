@@ -57,7 +57,7 @@ namespace OptimunLegalServices.Areas.OptimunAdmin.Controllers
                     return View();
                 }
             }
-            return RedirectToAction("Index", "Contact");
+            return RedirectToAction("Index", "home");
 
         }
 

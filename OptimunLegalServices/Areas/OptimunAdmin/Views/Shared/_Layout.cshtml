@@ -17,18 +17,6 @@
 
     }
 }
-@if (TempData["Delete"] != null)
-{
-    if ((bool)TempData["Delete"] == true)
-    {
-        <input type="hidden" id="deleteSuccess" />
-    }
-    else
-    {
-        <input type="hidden" id="deleteError" />
-
-    }
-}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,7 +109,7 @@
                                     <li><a asp-area="OptimunAdmin" asp-controller="AdminRegister" asp-action="Register"><i class="icon-settings"></i> Register</a></li>
                                             }
                                 <li><a asp-area="OptimunAdmin" asp-controller="Security" asp-action="Security"><i class="icon-settings"></i> Security</a></li>
-                        <li><a asp-controller="contact" asp-action="index"><i class="icon-envelope-open"></i> My Messages</a></li>
+                                <li><a asp-area="OptimunAdmin" asp-controller="contact" asp-action="index"><i class="icon-envelope-open"></i> My Messages</a></li>
                         <li><a asp-area=" " asp-controller="Home" asp-action="Index"><i class="icon-home"></i>Go Site</a></li>
                         <li class="p-0">
                            <div class="dropdown-divider m-0"></div>
@@ -141,7 +129,7 @@
             <ul class="sidebar-menu">
                 <li class="nav-level">--- Navigation</li>
                 <li class="active treeview">
-                        <a class="waves-effect waves-dark" asp-area="OptimunAdmin" asp-controller="Home" asp-action="Statistics">
+                        <a class="waves-effect waves-dark" asp-area="OptimunAdmin" asp-controller="Home" asp-action="index">
                         <i class="icon-speedometer"></i><span> Dashboard</span>
                     </a>                
                 </li>
@@ -275,17 +263,6 @@ $window.scroll(function(){
 
             })
         </script>
-    <script>
-        $(document).ready(function () {
-            if ($("#deleteSuccess").length) {
-                toastr["success"]("Successful operation!", "You deleted 1 message, if you deleted it by mistake, check the email")
-            }
-            else if ($("#deleteError").length) {
-                toastr["error"]("An error occurred!", "Try it soon")
-            }
-
-        })
-    </script>
 </body>
 
 </html>

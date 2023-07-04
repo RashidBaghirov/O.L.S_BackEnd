@@ -3941,8 +3941,28 @@
       "PackagePath": "staticwebassets\\assets\\images\\07-01.jpg"
     },
     {
+      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\images\\1528fdce602-66f1-4971-a9ee-ccceda971a78-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\1528fdce602-66f1-4971-a9ee-ccceda971a78-image.png"
+    },
+    {
       "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\images\\8fdce602-66f1-4971-a9ee-ccceda971a78-image.png",
       "PackagePath": "staticwebassets\\assets\\images\\8fdce602-66f1-4971-a9ee-ccceda971a78-image.png"
+    },
+    {
+      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\images\\Blogs\\2601.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Blogs\\2601.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\images\\Blogs\\902.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Blogs\\902.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\images\\Blogs\\9893.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Blogs\\9893.jpg"
+    },
+    {
+      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\images\\Expertice\\830ex.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Expertice\\830ex.jpg"
     },
     {
       "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\images\\arrow-right.svg",
@@ -3963,66 +3983,6 @@
     {
       "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\js\\header.js",
       "PackagePath": "staticwebassets\\assets\\js\\header.js"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\main.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\main.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_contactus.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_contactus.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_expertise.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_expertise.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_footer.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_footer.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_header.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_header.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_new.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_new.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_sustainability.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_sustainability.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_switch.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_switch.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_video.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_video.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\others\\_whatwedo.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\others\\_whatwedo.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\pages\\_contact.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\pages\\_contact.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\pages\\_detail.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\pages\\_detail.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\pages\\_expertice.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\pages\\_expertice.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\pages\\_index.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\pages\\_index.scss"
-    },
-    {
-      "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\scss\\pages\\_news.scss",
-      "PackagePath": "staticwebassets\\assets\\scss\\pages\\_news.scss"
     },
     {
       "Id": "C:\\Users\\resid\\OneDrive\\Desktop\\O.L.S.Back\\OptimunLegalServices\\wwwroot\\assets\\videos\\O.L.S_2023_3.mp4",

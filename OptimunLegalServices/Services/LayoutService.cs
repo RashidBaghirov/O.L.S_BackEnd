@@ -27,5 +27,11 @@ namespace OptimunLegalServices.Services
             var user = await _userManager.GetUserAsync(_accessor.HttpContext.User);
             return user;
         }
+        public Dictionary<string, string> GetSettings()
+        {
+            Dictionary<string, string> settings = _context.Settings.ToDictionary(s => s.Key, s => s.Value);
+
+            return settings;
+        }
     }
 }

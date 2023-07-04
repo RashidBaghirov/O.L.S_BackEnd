@@ -1,6 +1,8 @@
 ﻿@{
     ViewBag.Title = "Expertice";
+    List<PracticeArea> practiceAreas = ViewBag.Practice;
 }
+@model List<Expertice>
 @if (TempData["Subscribe"] != null)
 {
     if ((bool)TempData["Subscribe"] == true)
@@ -39,62 +41,38 @@
             <div class="col-12">
                 <div class="row justify-content-center">
                     <div class="col-6">
-                        <div class="titles_expertice">
-                            <p>
-                                We know that the best advice encompasses more than legal
-                                expertise alone. Different businesses and sectors face
-                                different opportunities and challenges. Our market
-                                strength and depth of experience allows us to be a
-                                strategic partner to our clients and to tailor solutions
-                                beyond the legal details.
-                            </p>
-                        </div>
-                        <div class="image">
-                            <img src="https://www.mannheimerswartling.se/app/uploads/2022/12/02-0045-2048x1365.jpg"
-                                 alt="" />
-                        </div>
-                        <div class="infos">
-                            <div class="info">
-                                <p>
-                                    We know that the best advice encompasses more than legal
-                                    expertise alone. Different businesses and sectors face
-                                    different opportunities and challenges. Our market
-                                    strength and depth of experience allows us to be a
-                                    strategic partner to our clients and to tailor solutions
-                                    beyond the legal details.
-                                </p>
+                        @foreach (Expertice expertice in Model)
+                        {
+                            <div class="ex">
+                                <div class="titles_expertice">
+                                    <p>
+                                        @expertice.Titles_expertice
+                                    </p>
+                                </div>
+                                <div class="image">
+                                    <img src="~/assets/images/Expertice/@expertice.Image"
+                                         alt="" />
+                                </div>
+                                <div class="infos">
+                                    <div class="info">
+                                        <p>
+                                            @expertice.Infos
+    
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        }
                         <div class="practice_group">
                             <div class="practice_title">
                                 <h4>Practice area</h4>
                             </div>
                             <div class="practice_area">
                                 <ol>
-                                    <li>Banking and Finance</li>
-                                    <li>Construction</li>
-                                    <li>Contentious Regulatory</li>
-                                    <li>Corporate Commercial</li>
-                                    <li>Corporate Investigations and Corporate Crime</li>
-                                    <li>Corporate Sustainability and Risk Management</li>
-                                    <li>Corporate Taxation</li>
-                                    <li>Data Privacy</li>
-                                    <li>Dispute Resolution</li>
-                                    <li>Emerging and Growth Companies</li>
-                                    <li>Employment and Pensions</li>
-                                    <li>Environment</li>
-                                    <li>EU and Competition</li>
-                                    <li>Financial Regulation</li>
-                                    <li>Funds and Investments</li>
-                                    <li>Insurance</li>
-                                    <li>Intellectual Property, Marketing and Media</li>
-                                    <li>IT/Tech</li>
-                                    <li>Mergers and Acquisitions</li>
-                                    <li>Public M&A and Equity Capital Markets</li>
-                                    <li>Public Procurement</li>
-                                    <li>Real Estate</li>
-                                    <li>Restructuring and Insolvency</li>
-                                    <li>Trade</li>
+                                    @foreach (PracticeArea area in practiceAreas)
+                                    {
+                                        <li>@area.Name</li>
+                                    }
                                 </ol>
                             </div>
                         </div>
